@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <script src="static\my_mini_project_js.js"></script>
+</head>
+<body>
+    <form id="signUp-form" action="/signUp" method="post">
+        <h1>Реєстрація</h1>
+        <p>Введіть ваше ім'я:</p>
+        <input type="text" name="name" id="name" required>
+
+        <p>Введіть ваш пароль:</p>
+        <input type="text" name="password" id="password" required>
+
+        <p>Підтвердіть ваш пароль:</p>
+        <input type="text" name="conpfirm-password" id="conpfirm-password" required>
+
+        <p>Введіть вашу пошту:</p>
+        <input type="text" name="mail" id="mail" required>
+        <input type="submit" name="btn" id="btn" value="Зареєструватись">
+    </form>
+
+    <div id="result"></div>
+</body>
+</html>
