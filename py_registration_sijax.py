@@ -33,6 +33,7 @@ class Favourite_food(Base):
 # base = Base()
 # base.create_db()
 
+
 @app.route("/")
 def f_1():
     return render_template("sijax_registration_pg1.html")
@@ -103,6 +104,11 @@ def f_5_2():
         else:
             data = {"message": "Ви ще не записували ваші улюблені страви"}
     return jsonify({"data": data}), 200
+
+@app.route('/qwer')
+def f_6():
+    return 'qwerqwer123'
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
